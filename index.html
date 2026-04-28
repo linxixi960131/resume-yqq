@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>杨钱倩 - 简历</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 28px 32px 24px 32px;
+  }
+
+  /* === Header === */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 2.5px solid #2B6CB0;
+  }
+  .header-left h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 6px;
+  }
+  .header-left .subtitle {
+    font-size: 14.5px;
+    color: #2B6CB0;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    font-size: 12.5px;
+    color: #555;
+  }
+  .contact-info span::before {
+    margin-right: 4px;
+  }
+
+  /* === Section === */
+  .section {
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2B6CB0;
+    padding-bottom: 4px;
+    border-bottom: 1.5px solid #bee3f8;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .section-title .icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #2B6CB0;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    font-size: 11px;
+  }
+
+  /* === Experience === */
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+  .exp-company {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a202c;
+  }
+  .exp-date {
+    font-size: 12px;
+    color: #718096;
+    white-space: nowrap;
+  }
+  .exp-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2B6CB0;
+    margin-bottom: 5px;
+  }
+  .exp-block {
+    margin-bottom: 12px;
+  }
+  .exp-block:last-child {
+    margin-bottom: 0;
+  }
+  .sub-title {
+    font-weight: 700;
+    font-size: 13px;
+    color: #2d3748;
+    margin: 6px 0 3px 0;
+  }
+  ul {
+    padding-left: 18px;
+    margin-bottom: 4px;
+  }
+  li {
+    margin-bottom: 2px;
+    line-height: 1.55;
+  }
+
+  /* === Highlights === */
+  .highlights {
+    background: #ebf8ff;
+    border-left: 3px solid #2B6CB0;
+    padding: 7px 12px;
+    margin: 6px 0 4px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .highlights-title {
+    font-weight: 700;
+    font-size: 12.5px;
+    color: #2B6CB0;
+    margin-bottom: 3px;
+  }
+  .highlights ul {
+    margin-bottom: 0;
+  }
+  .highlights li {
+    font-size: 12.5px;
+    color: #2d3748;
+  }
+
+  /* === Education === */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .edu-school {
+    font-weight: 700;
+    font-size: 13.5px;
+  }
+
+  /* === Tags === */
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .tag {
+    background: #ebf8ff;
+    color: #2B6CB0;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* === Self Eval === */
+  .eval-text {
+    font-size: 12.5px;
+    line-height: 1.65;
+    color: #4a5568;
+  }
+
+  /* === Download Button === */
+  .download-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #2B6CB0;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(43,108,176,0.3);
+    z-index: 1000;
+    transition: background 0.2s;
+  }
+  .download-btn:hover {
+    background: #2c5282;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; padding: 24px 28px 20px 28px; }
+    .download-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+<button class="download-btn" onclick="window.print()">下载 PDF</button>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>杨钱倩</h1>
+      <div class="subtitle">城市运营管理 | 6年运营与团队管理经验</div>
+      <div class="contact-info">
+        <span>女 / 28岁</span>
+        <span>17756543379</span>
+        <span>1132282645@qq.com</span>
+        <span>安徽大学 本科</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 核心优势 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">★</span>核心优势</div>
+    <div class="tag-list">
+      <span class="tag">城市经营管理</span>
+      <span class="tag">运力规模扩张</span>
+      <span class="tag">渠道/DCP管理</span>
+      <span class="tag">服务质量体系搭建</span>
+      <span class="tag">团队管理与赋能</span>
+      <span class="tag">数据分析驱动决策</span>
+      <span class="tag">跨部门协作推动落地</span>
+    </div>
+  </div>
+
+  <!-- 工作经历 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">◆</span>工作经历</div>
+
+    <!-- 滴滴 -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">滴滴出行（软通动力外派）</span>
+        <span class="exp-date">2023.11 - 至今</span>
+      </div>
+      <div class="exp-title">司机服务助理 — 南京城市运营</div>
+
+      <div class="sub-title">一、城市运力经营与目标达成</div>
+      <ul>
+        <li>全面参与南京城市专车业务运营，协助制定城市经营计划并拆解执行核心指标（GMV、完单量、成交率）。</li>
+        <li>推动司机规模从2000+扩大至3000+，客观成交率月均保持80%以上，入职以来实现南京GMV和完单量破峰超5次。</li>
+        <li>推动诚意单项目全量落地，优化区域运力布局与调度策略，提升运力供给效率。</li>
+      </ul>
+
+      <div class="sub-title">二、服务质量体系搭建与提升</div>
+      <ul>
+        <li>主导南京城市服务数据脱困项目：针对23年10个月未达标的困境，系统性推进司机分层管理、服务激励体系和司机心智重塑三大解法。</li>
+        <li>建立司机分层管理体系：设计"进人从严→21天打卡→三师帮带→重点管控→线下恳谈"全链路培训与管理机制。</li>
+        <li>搭建服务激励体系：优化渠道分账结构向服务侧倾斜，设立伙伴服务奖金包，将南京伙伴绩效中服务占比提升至55%（区域均值32%）。</li>
+        <li>策划落地20+场司机关怀活动和10+场乘客彩蛋活动，满意度达98%+，有效重塑司机服务心智。</li>
+      </ul>
+
+      <div class="sub-title">三、渠道（DCP）管理与赋能</div>
+      <ul>
+        <li>日常管理4家DCP渠道公司，制定伙伴绩效考核方案，开展渠道赋能训练营和伙伴分享会。</li>
+        <li>引入新DP增强竞争意识，开展尾部DP治理和多轮服务PK赛，推动渠道服务能力整体提升。</li>
+        <li>所管渠道（卓迅）连续两年获得年度优秀DP称号；助力其10-12月连续3个月满分达成，获年度服务进步奖。</li>
+      </ul>
+
+      <div class="highlights">
+        <div class="highlights-title">核心业绩</div>
+        <ul>
+          <li>服务质检合格率提升7pp（24年12月对比1月提升4.74pp），大区排名从倒数第二升至第二名。</li>
+          <li>扣分司机占比降低3pp，被投诉司机占比降低8pp，渠道满意度提升7pp。</li>
+          <li>司机规模扩张50%（2000+→3000+），GMV和完单破峰超5次，成交率月均80%+。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 华为 -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">华为（万宝盛华外派）</span>
+        <span class="exp-date">2022.05 - 2023.09</span>
+      </div>
+      <div class="exp-title">用户运营专员 — 南研所</div>
+      <ul>
+        <li>负责全渠道用户反馈（VOC）链路管理，从触点设计到采集汇总，进行分类打标与问题识别，洞察用户需求并推动产品优化方案落地。</li>
+        <li>运营微信公众号、社区论坛和YouTube等海外媒体，策划节日活动方案，中秋活动浏览量3k+、百余条好评。</li>
+        <li>参与天机系统搭建，创建信息中心一站式查询平台，提升用户数据清洗效率和用户体验。</li>
+      </ul>
+      <div class="highlights">
+        <div class="highlights-title">核心业绩</div>
+        <ul>
+          <li>负责产品在华为2022年度用户满意度调查中获得前3名。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 网易有道 + 流利说 合并 -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">网易有道 / 流利说</span>
+        <span class="exp-date">2019.03 - 2022.04</span>
+      </div>
+      <div class="exp-title">社群运营组长</div>
+      <ul>
+        <li>管理10人+团队，负责出勤、转介绍、续报等关键数据，团队转化数据多次全国前三；负责新员工面试与培训。</li>
+        <li>主导社群运营转化，设计续费SOP提升整体续课率150%；秋季班续报率95%，群活增长近七成，单日转化额个人40W、团队300W+。</li>
+        <li>参与绿洲系统和曼哈顿系统的前期调研与搭建，帮助业务团队提升整体转化率。</li>
+      </ul>
+      <div class="highlights">
+        <div class="highlights-title">核心业绩</div>
+        <ul>
+          <li>所带团队暑期续报获南京基地文科项目组第一名，荣获"优秀组长"和"优秀团队"称号。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 教育经历 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">◇</span>教育经历</div>
+    <div class="edu-row">
+      <span class="edu-school">安徽大学 — 新闻学（本科）</span>
+      <span class="exp-date">2013.09 - 2017.06</span>
+    </div>
+    <div style="font-size:12px;color:#718096;margin-top:2px;">大学英语四/六级（CET-4/6） | 普通话二级甲等 | 雅思 5.5</div>
+  </div>
+
+  <!-- 自我评价 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">●</span>自我评价</div>
+    <div class="eval-text">
+      6年运营与管理经验，深耕网约车城市运营，具备从运力扩张、服务质量体系搭建到渠道DCP管理的完整实战经验。擅长以数据驱动决策，通过体系化方案推动城市核心指标达成，主导南京城市服务数据脱困，实现大区排名从倒数跃升至前列。具备较强的团队管理与跨部门协作能力，能够整合渠道、伙伴、司机等多方资源推动项目落地。执行力强，抗压能力突出，适应快速变化的业务节奏。
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
